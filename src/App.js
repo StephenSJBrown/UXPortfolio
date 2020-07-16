@@ -18,6 +18,8 @@ import Telecomms from "./pages/Telecomms";
 
 import avatar from "./images/avatar.jpg";
 
+import CV from "./docs/StephenSJBrown CV.pdf"
+
 function App() {
   return (
     <>
@@ -75,6 +77,14 @@ function App() {
                     <List.Content>
                       <a href="https://github.com/StephenSJBrown/">
                         Github
+                      </a>
+                    </List.Content>
+                  </List.Item>
+                  <List.Item>
+                    <List.Icon name="id badge" />
+                    <List.Content>
+                      <a href={CV}>
+                        CV
                       </a>
                     </List.Content>
                   </List.Item>
