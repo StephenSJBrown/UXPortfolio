@@ -8,7 +8,7 @@ import {
   Image,
   Container,
   Header,
-  Responsive
+  Responsive,
 } from "semantic-ui-react";
 
 import Home from "./pages/Home";
@@ -18,7 +18,7 @@ import Telecomms from "./pages/Telecomms";
 
 import avatar from "./images/avatar.jpg";
 
-import CV from "./docs/StephenSJBrown CV.pdf"
+import CV from "./docs/StephenSJBrown CV.pdf";
 
 function App() {
   return (
@@ -27,19 +27,26 @@ function App() {
         <Grid>
           <Grid.Column computer={1} tablet={1} mobile={1} id="left-margin" />
           <Grid.Column computer={14} tablet={14} mobile={14} id="page">
-            <Responsive as="Divider" minWidth={320}/>
+            <Responsive as="Divider" minWidth={320} />
             <Divider hidden />
             <Divider hidden />
             <Grid id="page-grid">
               <Grid.Column mobile={16} tablet={8} computer={4} id="info">
                 <Container textAlign="center">
                   <Header as="h1">Stephen</Header>
-                  <Image circular src={avatar} size="small" centered alt="profile photo" />
+                  <Image
+                    circular
+                    src={avatar}
+                    size="small"
+                    centered
+                    alt="profile photo"
+                  />
                   <Divider hidden />
                   <p>
-                    I'm a UX Designer from Accenture that recently gained experience in full-stack web
-                    development during a sabbatical travelling Asia. Outside of tech, I like to make electronic and
-                    neo-soul music, and watch Kurzgesagt videos.
+                    I'm a UX Designer from Accenture that recently gained
+                    experience in full-stack web development during a sabbatical
+                    travelling Asia. Outside of tech, I like to make electronic
+                    and neo-soul music, and watch Kurzgesagt videos.
                   </p>
                 </Container>
                 <Divider hidden />
@@ -75,23 +82,23 @@ function App() {
                   <List.Item>
                     <List.Icon name="github" />
                     <List.Content>
-                      <a href="https://github.com/StephenSJBrown/">
-                        Github
-                      </a>
+                      <a href="https://github.com/StephenSJBrown/">Github</a>
                     </List.Content>
                   </List.Item>
                   <List.Item>
                     <List.Icon name="id badge" />
                     <List.Content>
-                      <a href={CV}>
-                        CV
-                      </a>
+                      <a href={CV}>CV</a>
                     </List.Content>
                   </List.Item>
                 </List>
-                <Divider/>
+                <Divider />
                 <Container textAlign="center">
-                  <p>This website was coded by me in React, using the Semantic UI library. </p>
+                  <p>
+                    This website was coded by me in React, using the Semantic UI
+                    library (which has a few alignment issues but great for
+                    getting things moving).
+                  </p>
                 </Container>
               </Grid.Column>
               <Grid.Column mobile={16} tablet={8} computer={12} id="work-panel">

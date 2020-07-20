@@ -18,17 +18,15 @@ import Compete from "../images/compete-banner.png";
 import Interview from "../images/interview-banner.png";
 import SurveyBanner from "../images/survey-banner.png";
 import Survey from "../images/survey.png";
-import lab1 from '../images/lab1.png'
-import lab2 from '../images/lab2.png'
-import lab3 from '../images/lab3.png'
+import lab1 from "../images/lab1.png";
+import lab2 from "../images/lab2.png";
+import lab3 from "../images/lab3.png";
 
 const Bank = () => {
   return (
     <>
       <Link to="/">
-        <Sticky>
-          <Button color="teal">Back to Work</Button>
-        </Sticky>
+        <Button color="teal">Back to Work</Button>
       </Link>
       <Message info>
         <p>
@@ -208,7 +206,7 @@ const Bank = () => {
             being a requirement for customers to be eligible for the prize draw
           </li>
         </ul>
-        <Divider hidden/>
+        <Divider hidden />
         <Image src={Survey} size="large" centered />
       </Container>
       <Divider hidden />
@@ -282,21 +280,21 @@ const Bank = () => {
       </Container>
       <Divider hidden />
       <Divider hidden />
-      <Container text id="stats">
+      <Statistic.Group widths="3" id="stats">
         <Statistic>
           <Statistic.Value>54</Statistic.Value>
           <Statistic.Label>Street Interviews</Statistic.Label>
         </Statistic>
         <Statistic>
           <Statistic.Value>114</Statistic.Value>
-          <Statistic.Label>surveys answered</Statistic.Label>
+          <Statistic.Label>surveys</Statistic.Label>
         </Statistic>
         <Statistic>
           <Statistic.Value>24</Statistic.Value>
           <Statistic.Label>Lab Interviews</Statistic.Label>
         </Statistic>
-      </Container>
-      <Divider hidden/>
+      </Statistic.Group>
+      <Divider hidden />
       <Container text id="learnings">
         <h1>Key Learnings</h1>
         <p>
@@ -311,6 +309,9 @@ const Bank = () => {
         </p>
       </Container>
       <Divider hidden />
+      <Link to="/">
+        <Button color="teal">Back to Work</Button>
+      </Link>
     </>
   );
 };
