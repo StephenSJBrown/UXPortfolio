@@ -9,8 +9,6 @@ import {
   Divider,
   Button,
   Header,
-  Sticky,
-  Responsive,
 } from "semantic-ui-react";
 
 import Campus from "../images/Campus-banner.png";
