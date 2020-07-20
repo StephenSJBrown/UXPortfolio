@@ -9,7 +9,8 @@ import {
   Divider,
   Button,
   Header,
-  Sticky
+  Sticky,
+  Responsive,
 } from "semantic-ui-react";
 
 import Campus from "../images/Campus-banner.png";
@@ -22,7 +23,7 @@ const University = () => {
   return (
     <>
       <Link to="/">
-        <Sticky><Button color="teal">Back to Work</Button></Sticky>
+        <Button color="teal">Back to Work</Button>
       </Link>
       <Message info>
         <p>
@@ -33,7 +34,7 @@ const University = () => {
       </Message>
       <Container textAlign="center" id="header">
         <Dimmer.Dimmable blurring>
-          <Image src={Campus}/>
+          <Image src={Campus} />
           <Dimmer active>
             <Header size="huge" inverted>
               UK University
@@ -58,8 +59,8 @@ const University = () => {
           <li>Usability testing</li>
         </ul>
         <p>
-          I joined the project during the <b>design phase</b> where
-          experience maps, user stories, and personas had been created.
+          I joined the project during the <b>design phase</b> where experience
+          maps, user stories, and personas had been created.
         </p>
       </Container>
       <Divider hidden />
@@ -67,7 +68,9 @@ const University = () => {
         <Dimmer.Dimmable blurring>
           <Image src={Workshop} fluid />
           <Dimmer active>
-            <Header size="medium" inverted>Workshop Facilitation</Header>
+            <Header size="medium" inverted>
+              Workshop Facilitation
+            </Header>
           </Dimmer>
         </Dimmer.Dimmable>
       </Container>
@@ -96,14 +99,14 @@ const University = () => {
             process provided by the client and were no longer than three hours
           </li>
           <li>
-            Key exercises were <b>Journey Mapping</b> and <b>Card Sorting </b> 
-  (closed) to group existing processes
+            Key exercises were <b>Journey Mapping</b> and <b>Card Sorting </b>
+            (closed) to group existing processes
           </li>
           <li>
             During these workshops we were able to decide where activities
-            should be grouped. For example, grouping questions into segments in student questionnaires, additionally I
-            discovered a number of questions which were unecessary, thus
-            simplifying the user journey.
+            should be grouped. For example, grouping questions into segments in
+            student questionnaires, additionally I discovered a number of
+            questions which were unecessary, thus simplifying the user journey.
           </li>
         </ul>
       </Container>
@@ -112,7 +115,9 @@ const University = () => {
         <Dimmer.Dimmable blurring>
           <Image src={WireframeBanner} fluid />
           <Dimmer active>
-            <Header size="medium" inverted>Wireframes</Header>
+            <Header size="medium" inverted>
+              Wireframes
+            </Header>
           </Dimmer>
         </Dimmer.Dimmable>
       </Container>
@@ -120,7 +125,8 @@ const University = () => {
       <Container id="wireframe-body">
         <Container text>
           <em>
-            During the design process I created wireframes for usability testing.
+            During the design process I created wireframes for usability
+            testing.
           </em>
           <ul>
             <li>
@@ -128,15 +134,19 @@ const University = () => {
               support without using uneccesary time. The final visual identity
               was to be decided at a later stage
             </li>
-            <li>They were designed on AxureRP as this was the project's tool of choice</li>
             <li>
-              This particular design, showing the student portal homepage went through three iterations
+              They were designed on AxureRP as this was the project's tool of
+              choice
+            </li>
+            <li>
+              This particular design, showing the student portal homepage went
+              through three iterations
             </li>
           </ul>
         </Container>
         <Container textAlign="center">
           <Image src={Wireframe} size="large" bordered centered />
-          <Divider hidden/>
+          <Divider hidden />
           <p>Wireframe for university portal's homepage (altered)</p>
         </Container>
       </Container>
@@ -145,7 +155,9 @@ const University = () => {
         <Dimmer.Dimmable blurring>
           <Image src={UsabilityBanner} fluid />
           <Dimmer active>
-            <Header size="medium" inverted>Usability Testing</Header>
+            <Header size="medium" inverted>
+              Usability Testing
+            </Header>
           </Dimmer>
         </Dimmer.Dimmable>
       </Container>
@@ -171,9 +183,9 @@ const University = () => {
             taker
           </li>
           <li>
-            One example of an insight that came about was many students expected a dropdown
-            when searching for halls of residence as many prospective students
-            would not know the names of all halls
+            One example of an insight that came about was many students expected
+            a dropdown when searching for halls of residence as many prospective
+            students would not know the names of all halls
           </li>
           <li>
             Armed with this information, I redesigned the page to display each
@@ -184,19 +196,21 @@ const University = () => {
       </Container>
       <Divider hidden />
       <Divider hidden />
-      <Container text id="stats">
-        <Statistic>
-          <Statistic.Value>36</Statistic.Value>
-          <Statistic.Label>Workshops</Statistic.Label>
-        </Statistic>
-        <Statistic>
-          <Statistic.Value>32</Statistic.Value>
-          <Statistic.Label>Usability tests</Statistic.Label>
-        </Statistic>
-        <Statistic>
-          <Statistic.Value>3</Statistic.Value>
-          <Statistic.Label>average wireframe iterations</Statistic.Label>
-        </Statistic>
+      <Container>
+        <Statistic.Group widths="3">
+          <Statistic>
+            <Statistic.Value>36</Statistic.Value>
+            <Statistic.Label>Workshops</Statistic.Label>
+          </Statistic>
+          <Statistic>
+            <Statistic.Value>32</Statistic.Value>
+            <Statistic.Label>tests</Statistic.Label>
+          </Statistic>
+          <Statistic>
+            <Statistic.Value>3</Statistic.Value>
+            <Statistic.Label>average wireframe iterations</Statistic.Label>
+          </Statistic>
+        </Statistic.Group>
       </Container>
       <Divider hidden />
       <Divider hidden />
@@ -207,7 +221,8 @@ const University = () => {
           During the workshops with such large groups, topics could easily drift
           from our goals, however it was hard to discern where the line was. In
           moments like this I would carefully listen to the conversation, and
-          guide it back to the immediate goals, or put topics in a parking lot for later discussion.
+          guide it back to the immediate goals, or put topics in a parking lot
+          for later discussion.
         </p>
         <h4>Don't assume</h4>
         <p>
@@ -220,10 +235,14 @@ const University = () => {
         <p>
           Low-medium fidelity quireframes aren't all too pretty. Sometimes it
           felt it would help to improve their fidelity, but this time would be
-          wasted and may potnetially distract from the purposes of testing, so I didn't!
+          wasted and may potnetially distract from the purposes of testing, so I
+          didn't!
         </p>
       </Container>
       <Divider hidden />
+      <Link to="/">
+        <Button color="teal">Back to Work</Button>
+      </Link>
     </>
   );
 };
